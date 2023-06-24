@@ -1,0 +1,105 @@
+/*
+==UserCSS==
+@name     Sxyporn Plus
+@match    *://sxyprn.net/*
+@version  0.0.1
+==/UserCSS==
+*/
+
+.sharing_toolbox,
+.splitter {
+  display: none;
+}
+
+.next_page,
+.back_to,
+.show_more,
+.mysums_blog {
+  background: none;
+  border: none;
+  padding: 12px 10px;
+  margin: 12px 0;
+}
+
+#top_panel {
+  padding: 20px 0;
+}
+
+#top_panel_menu span {
+  padding-left: 32px;
+  margin-left: 2px;
+}
+
+#player_el {
+  height: auto;
+}
+
+.vid_container {
+  border: none;
+}
+
+#wrapper_div {
+  width: auto;
+  margin: 0 100px;
+}
+
+#vid_container_id,
+.post_el_post.post_el_small {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.post_el_small {
+  background: none;
+  width: 556px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.post_vid_thumb {
+  display: inline-block;
+  text-align: center;
+}
+
+.mini_post_vid_thumb {
+  transform: translateY(-50%) translateX(-50%);
+  left: 50%;
+}
+
+.block_header {
+  border: none;
+}
+
+.splitter_block_header {
+  background: none;
+  top: -32px;
+}
+
+.main_footer {
+  font-size: 0.8125rem;
+  text-align: center;
+  border: none;
+  margin: 36px 0 26px;
+}
+
+.main_footer span {
+  font-size: 0.95rem;
+  margin: 0 0.5rem;
+}
+
+#scroll_top_wrap {
+  cursor: default;
+}
+
+#scroll_top_div {
+  background: none;
+  color: #ffffff;
+  opacity: 0.2;
+}
+
+#scroll_top_wrap:hover #scroll_top_div {
+  background: none;
+  color: #ffffff;
+  opacity: 0.5;
+}
