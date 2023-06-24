@@ -16,11 +16,6 @@ setTimeout(() => {
     cinemaMode: JSON.parse(localStorage.getItem('plus_cinemaMode')) || false
   };
 
-  console.log(document);
-  console.log(window);
-
-  console.log(unsafeWindow);
-
   // const playerSettings = JSON.parse(localStorage.getItem('mgp_player'));
 
   // Change default quality from 720p to 1080p
@@ -76,12 +71,7 @@ setTimeout(() => {
       background: rgb(187, 187, 187);
       color: rgb(51, 51, 51);
     }
-t by defining these APIs in the content script (ISOLATED) world, supported by the extension APIs available to the ISOLATED world. By forcing user scripts to move from ISOLATED to USERSCRIPT, these extension-defined APIs would at first lose access to the privileged APIs.
 
-    This access can be restored by establishing a (synchronous) communication channel between the ISOLATED and USERSCRIPT worlds. This can achieved with existing DOM APIs, e.g. with a pre-shared secret (event name) + custom events on shared document/window. This technique may be familiar to some, as it is a way to communicate between MAIN and ISOLATED. Although used in practice, I discourage the use of window.postMessage for communication because that can be intercepted and/or break web pages (for previous discussion, see Proposal: deprecate window.postMessage(message, '*') for use with extensions #78).
-    In the future, a dedicated API to communicate between worlds could be considered.
-
-When multiple scripts match and have the same
     .plus-buttons a.plus-button.plus-button-isOn {
       background: rgb(20, 111, 223);
       color: rgb(255, 255, 255);
@@ -146,6 +136,7 @@ When multiple scripts match and have the same
   /**
    * Site-Specific Styles
    */
+  
   const generalStyles = `
     /* Hide elements */
 
